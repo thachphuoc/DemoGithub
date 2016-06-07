@@ -47,7 +47,7 @@ public class Database {
         try
         {
 
-            oos = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("C:/Users/PC14-05/Desktop/list.txt")));
+            oos = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("D:/list.txt")));
             oos.writeObject(list);
             System.out.println("Added !");
         }catch (Exception e)
@@ -70,7 +70,7 @@ public class Database {
         ObjectInputStream ois = null;
         try
         {
-            ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream("C:/Users/PC14-05/Desktop/list.txt")));
+            ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream("D:/list.txt")));
             test = (ArrayList<Users>) ois.readObject();
             for (int i=0; i<test.size(); i++)
             {
